@@ -718,6 +718,127 @@ class IntentAccuracyDailyDialog(BaseMetric):
         metric_dict = {"intent/accuracy": (matching_scores.tolist(), intent_accuracy)}
         return metric_dict
 
+class RLHFMetric(BaseMetric):
+    def __init__(self) -> None:
+        super().__init__()
+        self._metric = load_metric("rouge")
+
+    def compute(
+        self,
+        prompt_texts: List[str],
+        generated_texts: List[str],
+        reference_texts: List[List[str]],
+        meta_infos: List[Dict[str, Any]] = None,
+        model: PreTrainedModel = None,
+        split_name: str = None,
+    ):
+        ref_texts = [ref[0] for ref in reference_texts]
+        rejected_texts = [meta['rejected'] for meta in meta_infos]
+        split = [meta['split'] for meta in meta_infos]
+
+        test_count = 0
+        test_scores = 0
+        train_count = 0
+        train_scores = 0
+        
+        for i in tqdm(range(len(generated_texts))):
+
+            prediction = [generated_texts[i]]
+            rejected = [rejected_texts[i]]
+            reference = [ref_texts[i]]
+            split = split[i]
+
+            rejected_metric_result = self._metric.compute(
+                predictions=prediction, references=rejected, use_stemmer=True
+            )['rougeL'].mid.fmeasure
+
+            chosen_metric_result = self._metric.compute(
+                predictions=prediction, references=reference, use_stemmer=True
+            )['rougeL'].mid.fmeasure
+
+            if split == "train":
+                train_count += 1
+                if rejected_metric_result < chosen_metric_result:
+                    train_scores += 1
+            elif aplit == "test":
+                test_count += 1
+                if rejected_metric_result < chosen_metric_result:
+                    test_scores += 1
+            else:
+                    raise NotImplementedError
+
+        avg_score_train = train_scores / train_count if train_count!=0 else 0
+        avg_score_test = test_scores / test_count if test_count!=0 else 0
+        print(f"train_scores: {train_scores} | avg: {avg_score_train}")
+        metric_dict = {"fluency_metrics/chosen-preference": (None, avg_score_test),
+                        "fluency_metrics/chosen-preference-train": (None, avg_score_train)
+                        }
+        return metric_dict
+
+
+class RLHFSimMetric(BaseMetric):
+    def __init__(self) -> None:
+        super().__init__()
+        self._metric = load_metric("bertscore")
+        self._language = 'en'
+        self._last_gpu = f"cuda:{torch.cuda.device_count() - 1}"
+
+    def compute(
+        self,
+        prompt_texts: List[str],
+        generated_texts: List[str],
+        reference_texts: List[List[str]],
+        meta_infos: List[Dict[str, Any]] = None,
+        model: PreTrainedModel = None,
+        split_name: str = None,
+    ):
+        ref_texts = [ref[0] for ref in reference_texts]
+        rejected_texts = [rej['rejected'] for rej in meta_infos]
+        split = [meta['split'] for meta in meta_infos]
+
+        test_count = 0
+        test_scores = 0
+        train_count = 0
+        train_scores = 0
+
+        for i in tqdm(range(len(generated_texts))):
+
+            prediction = [generated_texts[i]]
+            rejected = [rejected_texts[i]]
+            reference = [ref_texts[i]]
+            with torch.no_grad():
+                rejected_metric_result = self._metric.compute(
+                    predictions=prediction,
+                    references=rejected,
+                    lang=self._language,
+                    device=self._last_gpu,
+                )["f1"][0]
+                chosen_metric_result = self._metric.compute(
+                    predictions=prediction,
+                    references=reference,
+                    lang=self._language,
+                    device=self._last_gpu,
+                )["f1"][0]
+
+            if split[i] == "train":
+                train_count += 1
+                if rejected_metric_result < chosen_metric_result:
+                    train_scores += 1
+            elif split[i] == "test":
+                test_count += 1
+                if rejected_metric_result < chosen_metric_result:
+                    test_scores += 1
+            else:
+                raise NotImplementedError
+
+        avg_score_train = train_scores / train_count if train_count!=0 else 0
+        avg_score_test = test_scores / test_count if test_count!=0 else 0
+        print(f"train_scores: {train_scores} | avg: {avg_score_train} | train_count: {train_count}")
+        metric_dict = {"fluency_metrics/chosen-preference-bertscore": (None, avg_score_test),
+                        "fluency_metrics/chosen-preference-bertscore-train": (None, avg_score_train)
+                        }
+
+        return metric_dict
 
 if __name__ == "__main__":
     prompt_texts = [""]

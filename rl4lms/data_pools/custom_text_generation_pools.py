@@ -172,6 +172,107 @@ class Xsum(TextGenPool):
         return pool_instance
 
 
+class HH_RLHF(TextGenPool):
+    @classmethod
+    def prepare(cls, split: str, fast_eval, toy_train, reduce_samples) -> 'TextGenPool':
+        
+        if split == 'val':
+            split_names = ["train", "test"]
+        elif split == 'test':
+            split_names = ["train"]
+        else:
+            split_names = ["train"]
+
+        samples = []
+
+        for split_name in split_names:
+
+            ds = load_dataset("Anthropic/hh-rlhf", split=split_name, data_dir="harmless-base")
+            idx = 0
+
+            for ex in ds:
+
+                text = ex["chosen"]
+                out = text.split('Assistant: ')[-1]
+                inp = text[:-len(out)]
+                rejected = ex["rejected"].split('Assistant: ')[-1]
+
+                if len(rejected.strip())==0 or len(out.strip())==0:
+                    continue
+
+                sample = Sample(id=f"{split}_{idx}",
+                            prompt_or_input_text=inp,
+                            references=[out],
+                            meta_data={
+                                    "rejected": rejected,
+                                    "split": split_name
+                                }
+                            )
+                samples.append(sample)
+                idx += 1
+
+                if (split=='val' or split=='test') and fast_eval:
+                    if idx >=1000:
+                        break
+
+                if toy_train:
+                    if idx >= 2:
+                        break
+                if split=='train' and reduce_samples:
+                    if idx >= 50000:
+                        break
+
+        pool_instance = cls(samples)
+        return pool_instance
+
+class Alpaca(TextGenPool):
+    @classmethod
+    def prepare(cls, split: str, fast_eval, toy_train, reduce_samples) -> 'TextGenPool':
+
+        ds_dict = load_dataset("yahma/alpaca-cleaned", split='train').train_test_split(test_size=0.1)
+        samples = []
+
+        if split == 'val':
+            split_names = ["train", "test"]
+        elif split == 'test':
+            split_names = ["train"]
+        else:
+            split_names = ["train"]
+
+        for split_name in split_names:
+
+            ds = ds_dict[split_name]            
+            idx = 0
+
+            for ex in ds:
+
+                out = ex['output']
+                inp = "Instruction: " + ex["instruction"] + " Input: " + ex["input"] + " Answer: "
+
+                sample = Sample(id=f"{split}_{idx}",
+                            prompt_or_input_text=inp,
+                            references=[out],
+                            meta_data={
+                                    "split": split_name
+                                }
+                            )
+                samples.append(sample)
+                idx += 1
+
+                if (split=='val' or split=='test') and fast_eval:
+                    if idx >=1000:
+                        break
+
+                if toy_train:
+                    if idx >= 2:
+                        break
+                if split=='train' and reduce_samples:
+                    if idx >= 50000:
+                        break
+
+        pool_instance = cls(samples)
+        return pool_instance
+
 class CNNDailyMail(TextGenPool):
     @classmethod
     def prepare(cls,

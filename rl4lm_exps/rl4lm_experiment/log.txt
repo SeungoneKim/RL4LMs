@@ -1,0 +1,532 @@
+2023-04-21 17:31:44,687 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:31:45,222 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:31:45,225 [DEBUG] Attempting to acquire lock 139639139147888 on /home/seungone/.cache/huggingface/transformers/14a6995ae2be6c5ba82e11877e613e8a983765cd5732570fdf03cf6b9de81fea.69771c11043fb17216bed60e4cb4767a49a659423a3a167b4fededdaab5dc43d.lock
+2023-04-21 17:31:45,226 [DEBUG] Lock 139639139147888 acquired on /home/seungone/.cache/huggingface/transformers/14a6995ae2be6c5ba82e11877e613e8a983765cd5732570fdf03cf6b9de81fea.69771c11043fb17216bed60e4cb4767a49a659423a3a167b4fededdaab5dc43d.lock
+2023-04-21 17:31:45,228 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:31:45,662 [DEBUG] https://huggingface.co:443 "GET /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 2537
+2023-04-21 17:31:45,666 [DEBUG] Attempting to release lock 139639139147888 on /home/seungone/.cache/huggingface/transformers/14a6995ae2be6c5ba82e11877e613e8a983765cd5732570fdf03cf6b9de81fea.69771c11043fb17216bed60e4cb4767a49a659423a3a167b4fededdaab5dc43d.lock
+2023-04-21 17:31:45,667 [DEBUG] Lock 139639139147888 released on /home/seungone/.cache/huggingface/transformers/14a6995ae2be6c5ba82e11877e613e8a983765cd5732570fdf03cf6b9de81fea.69771c11043fb17216bed60e4cb4767a49a659423a3a167b4fededdaab5dc43d.lock
+2023-04-21 17:31:45,669 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:31:46,111 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:31:46,114 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:31:46,553 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 17:31:46,556 [DEBUG] Attempting to acquire lock 139639138657520 on /home/seungone/.cache/huggingface/transformers/3672c352f8016689903eb5982ada8724824c7521fe851d2cb2fb8c97d64c1e77.d6f0605ae3d57070be74b4c12206072ab332922acff822e6b5458691dbda7551.lock
+2023-04-21 17:31:46,557 [DEBUG] Lock 139639138657520 acquired on /home/seungone/.cache/huggingface/transformers/3672c352f8016689903eb5982ada8724824c7521fe851d2cb2fb8c97d64c1e77.d6f0605ae3d57070be74b4c12206072ab332922acff822e6b5458691dbda7551.lock
+2023-04-21 17:31:46,560 [DEBUG] Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2023-04-21 17:31:46,657 [DEBUG] https://cdn-lfs.huggingface.co:443 "GET /repos/bf/6f/bf6f650b464b29d0010bd25d18d9ebb545383704c670af1fcceac81468c7d8c3/d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27spiece.model%3B+filename%3D%22spiece.model%22%3B&Expires=1682324600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zL2JmLzZmL2JmNmY2NTBiNDY0YjI5ZDAwMTBiZDI1ZDE4ZDllYmI1NDUzODM3MDRjNjcwYWYxZmNjZWFjODE0NjhjN2Q4YzMvZDYwYWNiMTI4Y2Y3YjdmMjUzNmU4ZjM4YTViMThhMDU1MzVjOWUxNGM3YTM1NTkwNDI3MGUxNWIwOTQ1ZWE4Nj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODIzMjQ2MDB9fX1dfQ__&Signature=F2IIcXy36KFeUcuZ0u6ygIDufVjcdbApi9Nr9uVuK0iZbDu4YeTcEw6ROo4~tckNArQJI41KA5UbTcYAKSW~VXaEGPNJxh4IvukE4-EusLsWFJheinXt0SGvI4xvKAOltM0QNcAQHNxV443x7OCOHel61er95UH1RejP6sBWAvAJarv7nwXQX7kEWkXp2YGTnpljHH1MD6Hl9uvaTLpk08lNBm3tT836X6WAzzGnskjCLFvze4visf8dBBr6b5law9CCy0tHi5nA3kckHYMusMVDr4rQb4O2kxga3Ia~eN5Tdd9HSYe5M9FsTOJFNXfYGTLJBxl-WXn1S26JyvMd3Q__&Key-Pair-Id=KVTP0A1DKRTAX HTTP/1.1" 200 791656
+2023-04-21 17:31:46,711 [DEBUG] Attempting to release lock 139639138657520 on /home/seungone/.cache/huggingface/transformers/3672c352f8016689903eb5982ada8724824c7521fe851d2cb2fb8c97d64c1e77.d6f0605ae3d57070be74b4c12206072ab332922acff822e6b5458691dbda7551.lock
+2023-04-21 17:31:46,714 [DEBUG] Lock 139639138657520 released on /home/seungone/.cache/huggingface/transformers/3672c352f8016689903eb5982ada8724824c7521fe851d2cb2fb8c97d64c1e77.d6f0605ae3d57070be74b4c12206072ab332922acff822e6b5458691dbda7551.lock
+2023-04-21 17:31:46,718 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:31:47,155 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2023-04-21 17:31:47,159 [DEBUG] Attempting to acquire lock 139639135158176 on /home/seungone/.cache/huggingface/transformers/75038a7024433f7b51c5384e3a00fd182eedbc4765f04ffb151662e8a0153965.1d3a9d7a332839b438f0d489ad98892ef82082982cdf2adddc251c880c7935c9.lock
+2023-04-21 17:31:47,162 [DEBUG] Lock 139639135158176 acquired on /home/seungone/.cache/huggingface/transformers/75038a7024433f7b51c5384e3a00fd182eedbc4765f04ffb151662e8a0153965.1d3a9d7a332839b438f0d489ad98892ef82082982cdf2adddc251c880c7935c9.lock
+2023-04-21 17:31:47,166 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:31:47,636 [DEBUG] https://huggingface.co:443 "GET /google/flan-t5-base/resolve/main/tokenizer.json HTTP/1.1" 200 2424064
+2023-04-21 17:31:48,166 [DEBUG] Attempting to release lock 139639135158176 on /home/seungone/.cache/huggingface/transformers/75038a7024433f7b51c5384e3a00fd182eedbc4765f04ffb151662e8a0153965.1d3a9d7a332839b438f0d489ad98892ef82082982cdf2adddc251c880c7935c9.lock
+2023-04-21 17:31:48,169 [DEBUG] Lock 139639135158176 released on /home/seungone/.cache/huggingface/transformers/75038a7024433f7b51c5384e3a00fd182eedbc4765f04ffb151662e8a0153965.1d3a9d7a332839b438f0d489ad98892ef82082982cdf2adddc251c880c7935c9.lock
+2023-04-21 17:31:48,172 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:31:48,608 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 17:31:48,614 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:31:49,059 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 17:31:49,064 [DEBUG] Attempting to acquire lock 139639135158176 on /home/seungone/.cache/huggingface/transformers/6782dec2ba87f4095a19927661f7eb8863189d2f8d65f1293094e9832cb23d28.a6ade5be9ee4d179c3ae03f26ae924a8473ffd7fc4b15c73138dcc1527b00e62.lock
+2023-04-21 17:31:49,068 [DEBUG] Lock 139639135158176 acquired on /home/seungone/.cache/huggingface/transformers/6782dec2ba87f4095a19927661f7eb8863189d2f8d65f1293094e9832cb23d28.a6ade5be9ee4d179c3ae03f26ae924a8473ffd7fc4b15c73138dcc1527b00e62.lock
+2023-04-21 17:31:49,071 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:31:49,496 [DEBUG] https://huggingface.co:443 "GET /google/flan-t5-base/resolve/main/special_tokens_map.json HTTP/1.1" 200 2201
+2023-04-21 17:31:49,501 [DEBUG] Attempting to release lock 139639135158176 on /home/seungone/.cache/huggingface/transformers/6782dec2ba87f4095a19927661f7eb8863189d2f8d65f1293094e9832cb23d28.a6ade5be9ee4d179c3ae03f26ae924a8473ffd7fc4b15c73138dcc1527b00e62.lock
+2023-04-21 17:31:49,504 [DEBUG] Lock 139639135158176 released on /home/seungone/.cache/huggingface/transformers/6782dec2ba87f4095a19927661f7eb8863189d2f8d65f1293094e9832cb23d28.a6ade5be9ee4d179c3ae03f26ae924a8473ffd7fc4b15c73138dcc1527b00e62.lock
+2023-04-21 17:31:49,507 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:31:49,962 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:52:04,801 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:52:05,087 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:52:05,094 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:52:05,290 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:52:05,296 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:52:05,506 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 17:52:05,513 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:52:05,741 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2023-04-21 17:52:05,746 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:52:05,988 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 17:52:05,993 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:52:06,194 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 17:52:06,200 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:52:06,396 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:53:44,000 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:53:44,301 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:53:44,308 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:53:44,512 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:53:44,518 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:53:44,787 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 17:53:44,795 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:53:45,006 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2023-04-21 17:53:45,012 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:53:45,270 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 17:53:45,276 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:53:45,873 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 17:53:45,879 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:53:46,083 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:54:02,381 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:02,588 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:54:02,594 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:02,811 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:54:02,817 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:03,182 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 17:54:03,189 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:03,386 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2023-04-21 17:54:03,393 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:03,595 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 17:54:03,601 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:03,804 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 17:54:03,810 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:04,012 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:54:16,558 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:16,857 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:54:16,863 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:17,067 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:54:17,073 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:17,283 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 17:54:17,291 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:17,547 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2023-04-21 17:54:17,553 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:17,752 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 17:54:17,758 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:17,969 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 17:54:17,976 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:18,176 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:54:56,848 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:57,149 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:54:57,157 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:57,397 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:54:57,403 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:57,613 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 17:54:57,621 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:57,825 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2023-04-21 17:54:57,830 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:58,047 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 17:54:58,053 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:58,253 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 17:54:58,259 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:58,457 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:54:58,502 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:58,731 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:54:58,735 [DEBUG] Attempting to acquire lock 139986361001680 on /home/seungone/.cache/huggingface/transformers/1c7b8f65d53d897fbbeb1fe816de28d71b4e45ec1681ed27de69caec628b1532.b58d7aa1e5c8969d5e45f53c78b923dab8e170e0f62b4017ae2fba78149a1fe2.lock
+2023-04-21 17:54:58,739 [DEBUG] Lock 139986361001680 acquired on /home/seungone/.cache/huggingface/transformers/1c7b8f65d53d897fbbeb1fe816de28d71b4e45ec1681ed27de69caec628b1532.b58d7aa1e5c8969d5e45f53c78b923dab8e170e0f62b4017ae2fba78149a1fe2.lock
+2023-04-21 17:54:58,742 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:58,957 [DEBUG] https://huggingface.co:443 "GET /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 2539
+2023-04-21 17:54:58,964 [DEBUG] Attempting to release lock 139986361001680 on /home/seungone/.cache/huggingface/transformers/1c7b8f65d53d897fbbeb1fe816de28d71b4e45ec1681ed27de69caec628b1532.b58d7aa1e5c8969d5e45f53c78b923dab8e170e0f62b4017ae2fba78149a1fe2.lock
+2023-04-21 17:54:58,966 [DEBUG] Lock 139986361001680 released on /home/seungone/.cache/huggingface/transformers/1c7b8f65d53d897fbbeb1fe816de28d71b4e45ec1681ed27de69caec628b1532.b58d7aa1e5c8969d5e45f53c78b923dab8e170e0f62b4017ae2fba78149a1fe2.lock
+2023-04-21 17:54:58,968 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:59,166 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:54:59,173 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:54:59,390 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 17:54:59,395 [DEBUG] Attempting to acquire lock 139978592196304 on /home/seungone/.cache/huggingface/transformers/f9670509f4a4e6d5c890c420761fd2eea7921b2c34d5f4bdfc70810657b01225.d6f0605ae3d57070be74b4c12206072ab332922acff822e6b5458691dbda7551.lock
+2023-04-21 17:54:59,399 [DEBUG] Lock 139978592196304 acquired on /home/seungone/.cache/huggingface/transformers/f9670509f4a4e6d5c890c420761fd2eea7921b2c34d5f4bdfc70810657b01225.d6f0605ae3d57070be74b4c12206072ab332922acff822e6b5458691dbda7551.lock
+2023-04-21 17:54:59,403 [DEBUG] Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2023-04-21 17:55:00,299 [DEBUG] https://cdn-lfs.huggingface.co:443 "GET /repos/31/37/31374afa956af73d29bb4894a1f475523bd64dbf9ca90a968d7220abae9a278a/d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27spiece.model%3B+filename%3D%22spiece.model%22%3B&Expires=1682326499&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzMxLzM3LzMxMzc0YWZhOTU2YWY3M2QyOWJiNDg5NGExZjQ3NTUyM2JkNjRkYmY5Y2E5MGE5NjhkNzIyMGFiYWU5YTI3OGEvZDYwYWNiMTI4Y2Y3YjdmMjUzNmU4ZjM4YTViMThhMDU1MzVjOWUxNGM3YTM1NTkwNDI3MGUxNWIwOTQ1ZWE4Nj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODIzMjY0OTl9fX1dfQ__&Signature=kTYL5qyvXcF3H3OUwV3b6C2L9iThMTDjuAXkHpJueWOYWLZjTGAx18iSYeDPoDMo0dBEaBNlR0rjItgLAGLpbaLl2oACDAzQhxPFnIirU6d9iePn7dlUgQ9S6jt4YQjGUhC8Ek5grxhvRVNg4XT1tWBhdgYKbssFSCt3dhSp7IzhvYMJ9wMBEfF9wW2HbajEjt1hs2LxoxQ~KcGUYEZnYqeBUgfzBuP51pJs5YfWh9ymhUcP5wNLjiwFB38xIVIv78H~W6C~1zn15QY2BgNzKsvuRevhpPngSLmRNTOAPZeQaYxusTBcn89vW7KzcEZjmBwB1XsrEpHV2MuF3-NLsQ__&Key-Pair-Id=KVTP0A1DKRTAX HTTP/1.1" 200 791656
+2023-04-21 17:55:01,186 [DEBUG] Attempting to release lock 139978592196304 on /home/seungone/.cache/huggingface/transformers/f9670509f4a4e6d5c890c420761fd2eea7921b2c34d5f4bdfc70810657b01225.d6f0605ae3d57070be74b4c12206072ab332922acff822e6b5458691dbda7551.lock
+2023-04-21 17:55:01,190 [DEBUG] Lock 139978592196304 released on /home/seungone/.cache/huggingface/transformers/f9670509f4a4e6d5c890c420761fd2eea7921b2c34d5f4bdfc70810657b01225.d6f0605ae3d57070be74b4c12206072ab332922acff822e6b5458691dbda7551.lock
+2023-04-21 17:55:01,192 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:01,399 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer.json HTTP/1.1" 404 0
+2023-04-21 17:55:01,406 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:01,724 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 17:55:01,731 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:01,936 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 17:55:01,940 [DEBUG] Attempting to acquire lock 139978592198464 on /home/seungone/.cache/huggingface/transformers/a39af90b606b692c6d3519924f67b61570f097480b2fb99e8fee249d1be33a77.a6ade5be9ee4d179c3ae03f26ae924a8473ffd7fc4b15c73138dcc1527b00e62.lock
+2023-04-21 17:55:01,943 [DEBUG] Lock 139978592198464 acquired on /home/seungone/.cache/huggingface/transformers/a39af90b606b692c6d3519924f67b61570f097480b2fb99e8fee249d1be33a77.a6ade5be9ee4d179c3ae03f26ae924a8473ffd7fc4b15c73138dcc1527b00e62.lock
+2023-04-21 17:55:01,947 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:02,280 [DEBUG] https://huggingface.co:443 "GET /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/special_tokens_map.json HTTP/1.1" 200 2201
+2023-04-21 17:55:02,286 [DEBUG] Attempting to release lock 139978592198464 on /home/seungone/.cache/huggingface/transformers/a39af90b606b692c6d3519924f67b61570f097480b2fb99e8fee249d1be33a77.a6ade5be9ee4d179c3ae03f26ae924a8473ffd7fc4b15c73138dcc1527b00e62.lock
+2023-04-21 17:55:02,289 [DEBUG] Lock 139978592198464 released on /home/seungone/.cache/huggingface/transformers/a39af90b606b692c6d3519924f67b61570f097480b2fb99e8fee249d1be33a77.a6ade5be9ee4d179c3ae03f26ae924a8473ffd7fc4b15c73138dcc1527b00e62.lock
+2023-04-21 17:55:02,293 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:02,493 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:55:28,045 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:28,269 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:55:28,276 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:28,484 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:55:28,490 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:28,699 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 17:55:28,706 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:28,920 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2023-04-21 17:55:28,926 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:29,133 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 17:55:29,139 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:29,347 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 17:55:29,353 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:29,555 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:55:29,600 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:29,812 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:55:29,819 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:30,049 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:55:30,055 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:30,291 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 17:55:30,298 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:30,505 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer.json HTTP/1.1" 404 0
+2023-04-21 17:55:30,511 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:30,724 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 17:55:30,730 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:30,938 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 17:55:30,944 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:31,680 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 17:55:31,767 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:32,148 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-21 17:55:32,152 [DEBUG] Attempting to acquire lock 140420187708720 on /home/seungone/.cache/huggingface/transformers/97cdc7c62e69761b20a4ba3f72d344be75ed87b2fe24b03cba66f87254087a94.28bd6c72aa71036d4a2376a8d896c204d52f95b33eafea87c443d5e71c7e2868.lock
+2023-04-21 17:55:32,155 [DEBUG] Lock 140420187708720 acquired on /home/seungone/.cache/huggingface/transformers/97cdc7c62e69761b20a4ba3f72d344be75ed87b2fe24b03cba66f87254087a94.28bd6c72aa71036d4a2376a8d896c204d52f95b33eafea87c443d5e71c7e2868.lock
+2023-04-21 17:55:32,159 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:32,882 [DEBUG] https://huggingface.co:443 "GET /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/config.json HTTP/1.1" 200 787
+2023-04-21 17:55:32,889 [DEBUG] Attempting to release lock 140420187708720 on /home/seungone/.cache/huggingface/transformers/97cdc7c62e69761b20a4ba3f72d344be75ed87b2fe24b03cba66f87254087a94.28bd6c72aa71036d4a2376a8d896c204d52f95b33eafea87c443d5e71c7e2868.lock
+2023-04-21 17:55:32,892 [DEBUG] Lock 140420187708720 released on /home/seungone/.cache/huggingface/transformers/97cdc7c62e69761b20a4ba3f72d344be75ed87b2fe24b03cba66f87254087a94.28bd6c72aa71036d4a2376a8d896c204d52f95b33eafea87c443d5e71c7e2868.lock
+2023-04-21 17:55:32,895 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 17:55:33,104 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2023-04-21 17:55:33,109 [DEBUG] Attempting to acquire lock 140420187708096 on /home/seungone/.cache/huggingface/transformers/61bb468cbb01358d126b265f5ff8eb32434d734be59fde391e41c76e52fd88c5.2d90c24fbe79d5d7ae3bcb648e2acd3bfc3646372aafd763eed2ec3f88dee7b1.lock
+2023-04-21 17:55:33,112 [DEBUG] Lock 140420187708096 acquired on /home/seungone/.cache/huggingface/transformers/61bb468cbb01358d126b265f5ff8eb32434d734be59fde391e41c76e52fd88c5.2d90c24fbe79d5d7ae3bcb648e2acd3bfc3646372aafd763eed2ec3f88dee7b1.lock
+2023-04-21 17:55:33,116 [DEBUG] Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2023-04-21 17:55:34,025 [DEBUG] https://cdn-lfs.huggingface.co:443 "GET /repos/31/37/31374afa956af73d29bb4894a1f475523bd64dbf9ca90a968d7220abae9a278a/642b1a94109c44d927cbbfaa7214e85212af559f6b3e24af08e3b60c17815432?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1682326533&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzMxLzM3LzMxMzc0YWZhOTU2YWY3M2QyOWJiNDg5NGExZjQ3NTUyM2JkNjRkYmY5Y2E5MGE5NjhkNzIyMGFiYWU5YTI3OGEvNjQyYjFhOTQxMDljNDRkOTI3Y2JiZmFhNzIxNGU4NTIxMmFmNTU5ZjZiM2UyNGFmMDhlM2I2MGMxNzgxNTQzMj9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODIzMjY1MzN9fX1dfQ__&Signature=CazsEoWmxdC03z~88ANfF3~KKbcNpXV~EI~4wb0IiOEwpq1M4KXqBrWU73IcF9GFIl7-zFGyltJLtcYwsWmiEW6LQP51ymCpYE~IjsCE4XDr1dfpiYCSGAllr52jI8iUlbd~LXWE--xCDPXwCqGxmid3aR0m6BkDsuIEQ5oMefK7eVD3b2hAEIPViNleKe~cZsIdTATH0OoU6hKPRvfc80SldohTNcU3U5BQBSKVgNkHlldYfFJxT8~H0vvPObltEEMh8FzWWJrGRNveh-BGpucRKLmIGusCU3jvE5Zy8V1FLHf9wcxnok5TmKrp~GNJuWoY1PpCAbiR5Z6Qd3uphQ__&Key-Pair-Id=KVTP0A1DKRTAX HTTP/1.1" 200 3132793669
+2023-04-21 18:04:07,424 [DEBUG] Attempting to release lock 140420187708096 on /home/seungone/.cache/huggingface/transformers/61bb468cbb01358d126b265f5ff8eb32434d734be59fde391e41c76e52fd88c5.2d90c24fbe79d5d7ae3bcb648e2acd3bfc3646372aafd763eed2ec3f88dee7b1.lock
+2023-04-21 18:04:07,427 [DEBUG] Lock 140420187708096 released on /home/seungone/.cache/huggingface/transformers/61bb468cbb01358d126b265f5ff8eb32434d734be59fde391e41c76e52fd88c5.2d90c24fbe79d5d7ae3bcb648e2acd3bfc3646372aafd763eed2ec3f88dee7b1.lock
+2023-04-21 18:04:12,418 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:04:13,269 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/meteor/meteor.py HTTP/1.1" 200 0
+2023-04-21 18:04:13,272 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:04:13,624 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/meteor/meteor.py HTTP/1.1" 200 0
+2023-04-21 18:04:13,627 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:04:13,720 [DEBUG] https://raw.githubusercontent.com:443 "GET /huggingface/datasets/2.5.1/metrics/meteor/meteor.py HTTP/1.1" 200 2199
+2023-04-21 18:04:19,896 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:04:20,776 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/rouge/rouge.py HTTP/1.1" 200 0
+2023-04-21 18:04:20,783 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:04:21,078 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/rouge/rouge.py HTTP/1.1" 200 0
+2023-04-21 18:04:21,085 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:04:21,099 [DEBUG] https://raw.githubusercontent.com:443 "GET /huggingface/datasets/2.5.1/metrics/rouge/rouge.py HTTP/1.1" 200 2160
+2023-04-21 18:04:21,109 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:04:21,951 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/bleu/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:04:21,958 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:04:22,270 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/bleu/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:04:22,276 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:04:22,291 [DEBUG] https://raw.githubusercontent.com:443 "GET /huggingface/datasets/2.5.1/metrics/bleu/bleu.py HTTP/1.1" 200 2478
+2023-04-21 18:04:22,298 [DEBUG] Starting new HTTPS connection (1): github.com:443
+2023-04-21 18:04:22,627 [DEBUG] https://github.com:443 "HEAD /tensorflow/nmt/raw/master/nmt/scripts/bleu.py HTTP/1.1" 302 0
+2023-04-21 18:04:22,631 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:04:22,878 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /tensorflow/nmt/master/nmt/scripts/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:04:22,885 [DEBUG] Starting new HTTPS connection (1): github.com:443
+2023-04-21 18:04:22,955 [DEBUG] https://github.com:443 "GET /tensorflow/nmt/raw/master/nmt/scripts/bleu.py HTTP/1.1" 302 0
+2023-04-21 18:04:22,959 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:04:22,974 [DEBUG] https://raw.githubusercontent.com:443 "GET /tensorflow/nmt/master/nmt/scripts/bleu.py HTTP/1.1" 200 1554
+2023-04-21 18:04:22,981 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:04:23,802 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/bertscore/bertscore.py HTTP/1.1" 200 0
+2023-04-21 18:04:23,809 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:04:24,118 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/bertscore/bertscore.py HTTP/1.1" 200 0
+2023-04-21 18:04:24,125 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:04:24,146 [DEBUG] https://raw.githubusercontent.com:443 "GET /huggingface/datasets/2.5.1/metrics/bertscore/bertscore.py HTTP/1.1" 200 2923
+2023-04-21 18:05:48,783 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:49,300 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:05:49,304 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:49,511 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:05:49,514 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:49,714 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 18:05:49,718 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:50,022 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2023-04-21 18:05:50,025 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:50,243 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 18:05:50,246 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:50,455 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 18:05:50,458 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:50,668 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:05:50,708 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:50,921 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:05:50,928 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:51,141 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:05:51,147 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:51,355 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 18:05:51,362 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:51,593 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer.json HTTP/1.1" 404 0
+2023-04-21 18:05:51,599 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:51,809 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 18:05:51,815 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:52,017 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 18:05:52,023 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:52,241 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:05:52,329 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:52,539 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-21 18:05:52,546 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:05:52,757 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2023-04-21 18:05:57,822 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:05:58,674 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/meteor/meteor.py HTTP/1.1" 200 0
+2023-04-21 18:05:58,680 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:05:58,694 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/meteor/meteor.py HTTP/1.1" 200 0
+2023-04-21 18:05:58,879 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:05:59,735 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/rouge/rouge.py HTTP/1.1" 200 0
+2023-04-21 18:05:59,741 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:05:59,755 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/rouge/rouge.py HTTP/1.1" 200 0
+2023-04-21 18:05:59,763 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:06:00,622 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/bleu/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:06:00,629 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:06:00,649 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/bleu/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:06:00,656 [DEBUG] Starting new HTTPS connection (1): github.com:443
+2023-04-21 18:06:00,748 [DEBUG] https://github.com:443 "HEAD /tensorflow/nmt/raw/master/nmt/scripts/bleu.py HTTP/1.1" 302 0
+2023-04-21 18:06:00,751 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:06:00,762 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /tensorflow/nmt/master/nmt/scripts/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:06:00,767 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:06:01,585 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/bertscore/bertscore.py HTTP/1.1" 200 0
+2023-04-21 18:06:01,591 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:06:01,605 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/bertscore/bertscore.py HTTP/1.1" 200 0
+2023-04-21 18:08:30,062 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:30,378 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:08:30,385 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:30,590 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:08:30,596 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:30,821 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 18:08:30,829 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:31,054 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2023-04-21 18:08:31,060 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:31,260 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 18:08:31,266 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:31,543 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 18:08:31,549 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:31,757 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:08:31,802 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:32,316 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:08:32,322 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:32,541 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:08:32,547 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:32,770 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 18:08:32,777 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:32,976 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer.json HTTP/1.1" 404 0
+2023-04-21 18:08:32,983 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:33,192 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 18:08:33,199 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:33,395 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 18:08:33,401 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:33,603 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:08:33,689 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:33,912 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-21 18:08:33,921 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:34,163 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2023-04-21 18:08:39,186 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:08:40,027 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/meteor/meteor.py HTTP/1.1" 200 0
+2023-04-21 18:08:40,031 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:08:40,121 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/meteor/meteor.py HTTP/1.1" 200 0
+2023-04-21 18:08:40,308 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:08:41,161 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/rouge/rouge.py HTTP/1.1" 200 0
+2023-04-21 18:08:41,167 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:08:41,182 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/rouge/rouge.py HTTP/1.1" 200 0
+2023-04-21 18:08:41,191 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:08:42,023 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/bleu/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:08:42,030 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:08:42,047 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/bleu/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:08:42,055 [DEBUG] Starting new HTTPS connection (1): github.com:443
+2023-04-21 18:08:42,397 [DEBUG] https://github.com:443 "HEAD /tensorflow/nmt/raw/master/nmt/scripts/bleu.py HTTP/1.1" 302 0
+2023-04-21 18:08:42,402 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:08:42,418 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /tensorflow/nmt/master/nmt/scripts/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:08:42,423 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:08:43,267 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/bertscore/bertscore.py HTTP/1.1" 200 0
+2023-04-21 18:08:43,273 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:08:43,288 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/bertscore/bertscore.py HTTP/1.1" 200 0
+2023-04-21 18:08:43,306 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:43,538 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:08:43,544 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:08:44,412 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/Anthropic/hh-rlhf/Anthropic/hh-rlhf.py HTTP/1.1" 404 0
+2023-04-21 18:08:44,418 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:44,876 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:08:44,904 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:08:45,189 [DEBUG] https://huggingface.co:443 "HEAD /datasets/Anthropic/hh-rlhf/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-21 18:08:45,194 [WARNING] Using custom data configuration Anthropic--hh-rlhf-c8cd8dc58ab67414
+2023-04-21 18:08:45,211 [DEBUG] Starting new HTTPS connection (1): storage.googleapis.com:443
+2023-04-21 18:08:45,575 [DEBUG] https://storage.googleapis.com:443 "HEAD /huggingface-nlp/cache/datasets/Anthropic___json/Anthropic--hh-rlhf-c8cd8dc58ab67414/0.0.0/dataset_info.json HTTP/1.1" 404 0
+2023-04-21 18:08:45,639 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-c8cd8dc58ab67414/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab.incomplete/json-train.arrow
+2023-04-21 18:08:45,978 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-c8cd8dc58ab67414/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab.incomplete/json-test.arrow
+2023-04-21 18:08:46,002 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-c8cd8dc58ab67414/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab.incomplete/dataset_info.json
+2023-04-21 18:14:13,428 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:13,711 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:14:13,718 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:14,222 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:14:14,227 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:14,537 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 18:14:14,544 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:14,758 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2023-04-21 18:14:14,764 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:14,970 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 18:14:14,976 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:15,183 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 18:14:15,189 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:15,498 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:14:15,542 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:15,755 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:14:15,761 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:15,996 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:14:16,002 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:16,240 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 18:14:16,248 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:16,612 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer.json HTTP/1.1" 404 0
+2023-04-21 18:14:16,618 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:16,904 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 18:14:16,910 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:17,128 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 18:14:17,134 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:17,363 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:14:17,449 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:18,436 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-21 18:14:18,444 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:18,662 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2023-04-21 18:14:23,640 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:14:24,493 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/meteor/meteor.py HTTP/1.1" 200 0
+2023-04-21 18:14:24,499 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:14:24,809 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/meteor/meteor.py HTTP/1.1" 200 0
+2023-04-21 18:14:25,013 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:14:25,846 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/rouge/rouge.py HTTP/1.1" 200 0
+2023-04-21 18:14:25,852 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:14:26,141 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/rouge/rouge.py HTTP/1.1" 200 0
+2023-04-21 18:14:26,155 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:14:26,987 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/bleu/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:14:26,993 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:14:27,280 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/bleu/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:14:27,292 [DEBUG] Starting new HTTPS connection (1): github.com:443
+2023-04-21 18:14:27,961 [DEBUG] https://github.com:443 "HEAD /tensorflow/nmt/raw/master/nmt/scripts/bleu.py HTTP/1.1" 302 0
+2023-04-21 18:14:27,966 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:14:28,201 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /tensorflow/nmt/master/nmt/scripts/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:14:28,211 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:14:29,084 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/bertscore/bertscore.py HTTP/1.1" 200 0
+2023-04-21 18:14:29,090 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:14:29,400 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/bertscore/bertscore.py HTTP/1.1" 200 0
+2023-04-21 18:14:29,420 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:29,652 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:14:29,658 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:14:30,507 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/Anthropic/hh-rlhf/Anthropic/hh-rlhf.py HTTP/1.1" 404 0
+2023-04-21 18:14:30,513 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:30,736 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:14:30,761 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:31,096 [DEBUG] https://huggingface.co:443 "HEAD /datasets/Anthropic/hh-rlhf/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-21 18:14:31,102 [WARNING] Using custom data configuration Anthropic--hh-rlhf-161bcf33652d7a11
+2023-04-21 18:14:31,119 [DEBUG] Starting new HTTPS connection (1): storage.googleapis.com:443
+2023-04-21 18:14:31,473 [DEBUG] https://storage.googleapis.com:443 "HEAD /huggingface-nlp/cache/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/dataset_info.json HTTP/1.1" 404 0
+2023-04-21 18:14:31,494 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab.incomplete/json-train.arrow
+2023-04-21 18:14:31,571 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab.incomplete/json-test.arrow
+2023-04-21 18:14:31,578 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab.incomplete/dataset_info.json
+2023-04-21 18:14:33,434 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:33,693 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:14:33,700 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:14:34,576 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/Anthropic/hh-rlhf/Anthropic/hh-rlhf.py HTTP/1.1" 404 0
+2023-04-21 18:14:34,582 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:34,806 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:14:34,830 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:14:35,096 [DEBUG] https://huggingface.co:443 "HEAD /datasets/Anthropic/hh-rlhf/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-21 18:14:35,102 [WARNING] Using custom data configuration Anthropic--hh-rlhf-161bcf33652d7a11
+2023-04-21 18:14:35,105 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/dataset_info.json
+2023-04-21 18:14:35,107 [WARNING] Found cached dataset json (/home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab)
+2023-04-21 18:14:35,108 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/dataset_info.json
+2023-04-21 18:15:25,576 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:25,939 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:15:25,947 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:26,149 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:15:26,156 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:26,358 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 18:15:26,366 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:26,568 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2023-04-21 18:15:26,574 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:26,780 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 18:15:26,786 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:26,996 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 18:15:27,002 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:27,213 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:15:27,259 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:27,470 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:15:27,476 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:27,677 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:15:27,683 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:28,011 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/spiece.model HTTP/1.1" 302 0
+2023-04-21 18:15:28,019 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:28,240 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer.json HTTP/1.1" 404 0
+2023-04-21 18:15:28,247 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:28,465 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2023-04-21 18:15:28,471 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:28,713 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2023-04-21 18:15:28,719 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:28,932 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-04-21 18:15:29,020 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:29,233 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-21 18:15:29,241 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:29,526 [DEBUG] https://huggingface.co:443 "HEAD /stanfordnlp/SteamSHP-flan-t5-large/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2023-04-21 18:15:34,514 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:15:35,390 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/meteor/meteor.py HTTP/1.1" 200 0
+2023-04-21 18:15:35,395 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:15:35,410 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/meteor/meteor.py HTTP/1.1" 200 0
+2023-04-21 18:15:35,595 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:15:36,441 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/rouge/rouge.py HTTP/1.1" 200 0
+2023-04-21 18:15:36,446 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:15:36,484 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/rouge/rouge.py HTTP/1.1" 200 0
+2023-04-21 18:15:36,498 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:15:37,340 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/bleu/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:15:37,346 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:15:37,367 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/bleu/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:15:37,379 [DEBUG] Starting new HTTPS connection (1): github.com:443
+2023-04-21 18:15:37,496 [DEBUG] https://github.com:443 "HEAD /tensorflow/nmt/raw/master/nmt/scripts/bleu.py HTTP/1.1" 302 0
+2023-04-21 18:15:37,500 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:15:37,516 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /tensorflow/nmt/master/nmt/scripts/bleu.py HTTP/1.1" 200 0
+2023-04-21 18:15:37,521 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:15:38,358 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/bertscore/bertscore.py HTTP/1.1" 200 0
+2023-04-21 18:15:38,364 [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-04-21 18:15:38,378 [DEBUG] https://raw.githubusercontent.com:443 "HEAD /huggingface/datasets/2.5.1/metrics/bertscore/bertscore.py HTTP/1.1" 200 0
+2023-04-21 18:15:38,395 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:38,628 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:15:38,634 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:15:39,481 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/Anthropic/hh-rlhf/Anthropic/hh-rlhf.py HTTP/1.1" 404 0
+2023-04-21 18:15:39,487 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:39,727 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:15:39,752 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:39,962 [DEBUG] https://huggingface.co:443 "HEAD /datasets/Anthropic/hh-rlhf/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-21 18:15:39,968 [WARNING] Using custom data configuration Anthropic--hh-rlhf-161bcf33652d7a11
+2023-04-21 18:15:39,971 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/dataset_info.json
+2023-04-21 18:15:39,984 [WARNING] Found cached dataset json (/home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab)
+2023-04-21 18:15:39,985 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/dataset_info.json
+2023-04-21 18:15:41,871 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:42,244 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:15:42,252 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:15:43,084 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/Anthropic/hh-rlhf/Anthropic/hh-rlhf.py HTTP/1.1" 404 0
+2023-04-21 18:15:43,091 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:43,326 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:15:43,350 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:43,566 [DEBUG] https://huggingface.co:443 "HEAD /datasets/Anthropic/hh-rlhf/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-21 18:15:43,572 [WARNING] Using custom data configuration Anthropic--hh-rlhf-161bcf33652d7a11
+2023-04-21 18:15:43,575 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/dataset_info.json
+2023-04-21 18:15:43,578 [WARNING] Found cached dataset json (/home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab)
+2023-04-21 18:15:43,579 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/dataset_info.json
+2023-04-21 18:15:43,624 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:43,862 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:15:43,869 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:15:44,714 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/Anthropic/hh-rlhf/Anthropic/hh-rlhf.py HTTP/1.1" 404 0
+2023-04-21 18:15:44,721 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:44,985 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:15:45,009 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:45,217 [DEBUG] https://huggingface.co:443 "HEAD /datasets/Anthropic/hh-rlhf/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-21 18:15:45,222 [WARNING] Using custom data configuration Anthropic--hh-rlhf-161bcf33652d7a11
+2023-04-21 18:15:45,224 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/dataset_info.json
+2023-04-21 18:15:45,226 [WARNING] Found cached dataset json (/home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab)
+2023-04-21 18:15:45,228 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/dataset_info.json
+2023-04-21 18:15:45,273 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:45,532 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:15:45,539 [DEBUG] Starting new HTTPS connection (1): s3.amazonaws.com:443
+2023-04-21 18:15:46,402 [DEBUG] https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/Anthropic/hh-rlhf/Anthropic/hh-rlhf.py HTTP/1.1" 404 0
+2023-04-21 18:15:46,409 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:46,625 [DEBUG] https://huggingface.co:443 "GET /api/datasets/Anthropic/hh-rlhf HTTP/1.1" 200 873
+2023-04-21 18:15:46,649 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:15:46,862 [DEBUG] https://huggingface.co:443 "HEAD /datasets/Anthropic/hh-rlhf/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+2023-04-21 18:15:46,869 [WARNING] Using custom data configuration Anthropic--hh-rlhf-161bcf33652d7a11
+2023-04-21 18:15:46,872 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/dataset_info.json
+2023-04-21 18:15:46,874 [WARNING] Found cached dataset json (/home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab)
+2023-04-21 18:15:46,875 [DEBUG] open file: /home/seungone/.cache/huggingface/datasets/Anthropic___json/Anthropic--hh-rlhf-161bcf33652d7a11/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/dataset_info.json
+2023-04-21 18:17:01,071 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:17:01,364 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-21 18:17:01,369 [DEBUG] Attempting to acquire lock 140134093087552 on /home/seungone/.cache/huggingface/transformers/ef025c8db1020e9f67512623bfcb3f747602a8f1353b618f842826b3a6e8c93e.f1a741507370eee2f95b3b7642e3092506bf175633a325fe97e453763e1e7ebf.lock
+2023-04-21 18:17:01,373 [DEBUG] Lock 140134093087552 acquired on /home/seungone/.cache/huggingface/transformers/ef025c8db1020e9f67512623bfcb3f747602a8f1353b618f842826b3a6e8c93e.f1a741507370eee2f95b3b7642e3092506bf175633a325fe97e453763e1e7ebf.lock
+2023-04-21 18:17:01,375 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:17:01,610 [DEBUG] https://huggingface.co:443 "GET /google/flan-t5-base/resolve/main/config.json HTTP/1.1" 200 1404
+2023-04-21 18:17:01,616 [DEBUG] Attempting to release lock 140134093087552 on /home/seungone/.cache/huggingface/transformers/ef025c8db1020e9f67512623bfcb3f747602a8f1353b618f842826b3a6e8c93e.f1a741507370eee2f95b3b7642e3092506bf175633a325fe97e453763e1e7ebf.lock
+2023-04-21 18:17:01,617 [DEBUG] Lock 140134093087552 released on /home/seungone/.cache/huggingface/transformers/ef025c8db1020e9f67512623bfcb3f747602a8f1353b618f842826b3a6e8c93e.f1a741507370eee2f95b3b7642e3092506bf175633a325fe97e453763e1e7ebf.lock
+2023-04-21 18:17:01,623 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:17:01,831 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2023-04-21 18:17:01,836 [DEBUG] Attempting to acquire lock 140134186240224 on /home/seungone/.cache/huggingface/transformers/3dcc8e244c112799c7c7b46e9af3463cf2ff3e3d916061b0003eb378164f68ba.98c246f514243d329b7d6b877d060df8adb385fa046a27c7f0206938a018a8a2.lock
+2023-04-21 18:17:01,840 [DEBUG] Lock 140134186240224 acquired on /home/seungone/.cache/huggingface/transformers/3dcc8e244c112799c7c7b46e9af3463cf2ff3e3d916061b0003eb378164f68ba.98c246f514243d329b7d6b877d060df8adb385fa046a27c7f0206938a018a8a2.lock
+2023-04-21 18:17:01,843 [DEBUG] Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2023-04-21 18:17:01,952 [DEBUG] https://cdn-lfs.huggingface.co:443 "GET /repos/bf/6f/bf6f650b464b29d0010bd25d18d9ebb545383704c670af1fcceac81468c7d8c3/521ad557548700c7f342a804b51c7c17440c33662c387883c0a39ebbdec17a28?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1682324874&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4tbGZzLmh1Z2dpbmdmYWNlLmNvL3JlcG9zL2JmLzZmL2JmNmY2NTBiNDY0YjI5ZDAwMTBiZDI1ZDE4ZDllYmI1NDUzODM3MDRjNjcwYWYxZmNjZWFjODE0NjhjN2Q4YzMvNTIxYWQ1NTc1NDg3MDBjN2YzNDJhODA0YjUxYzdjMTc0NDBjMzM2NjJjMzg3ODgzYzBhMzllYmJkZWMxN2EyOD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODIzMjQ4NzR9fX1dfQ__&Signature=va8~fTLTL~Sn5UkCcxTlctAEcEDrEA2c1T-ObPWJhal~EW9rFMF4TS-9niCfxqNs~gNIgmNzoeYg5UiONoxaK5KPyss05-L9pTYjJGfA2P4Sea0FKguZgU3oRTnStjvtfG0zc~Pob3RRwX507sn-AUO3I-VOH6aPjWgCCiK2MHFMaL94BRWDdIPS4C6idArW26F1VWqXO-sVwymupwy2gXO~ESoXSjvB-1X9XHKKSDiBWkEEXO7XJAtlV3XwcasTKtEI-O8hNHdGHNX6bv3GRY7Xj0hSq8g0RizFScCR571PkBhQmv-9RVymS~JRUlkuSyA-gSff4fsXoRxC1sPtvw__&Key-Pair-Id=KVTP0A1DKRTAX HTTP/1.1" 200 990402637
+2023-04-21 18:19:43,626 [DEBUG] Attempting to release lock 140134186240224 on /home/seungone/.cache/huggingface/transformers/3dcc8e244c112799c7c7b46e9af3463cf2ff3e3d916061b0003eb378164f68ba.98c246f514243d329b7d6b877d060df8adb385fa046a27c7f0206938a018a8a2.lock
+2023-04-21 18:19:43,629 [DEBUG] Lock 140134186240224 released on /home/seungone/.cache/huggingface/transformers/3dcc8e244c112799c7c7b46e9af3463cf2ff3e3d916061b0003eb378164f68ba.98c246f514243d329b7d6b877d060df8adb385fa046a27c7f0206938a018a8a2.lock
+2023-04-21 18:19:44,723 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:19:44,996 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/config.json HTTP/1.1" 200 0
+2023-04-21 18:19:45,005 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2023-04-21 18:19:45,207 [DEBUG] https://huggingface.co:443 "HEAD /google/flan-t5-base/resolve/main/pytorch_model.bin HTTP/1.1" 302 0

@@ -18,6 +18,7 @@ from rl4lms.envs.text_generation.metric import (
 )
 import numpy as np
 from typing import List, Dict, Any
+from transformers import T5ForConditionalGeneration
 
 
 class RewardFunction(ABC):
@@ -366,6 +367,64 @@ class LearnedBatchedRewardFunction(BatchedRewardFunction):
 
         return rewards
 
+class FLANRewardFunction(RewardFunction):
+    def __init__(
+        self,
+        dataset,
+    ) -> None:
+        super().__init__()
+        self.model_name = 'stanfordnlp/SteamSHP-flan-t5-large'
+        self._device = "cuda" if torch.cuda.is_available() else "cpu"
+        self._metric_tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+        self._metric_tokenizer.truncation_side = "left"
+        self._max_length = 512
+        self._metric_model = T5ForConditionalGeneration.from_pretrained(self.model_name).to(self._device)
+        self._dataset_name = dataset
+
+    def __call__(
+        self,
+        current_observation: Observation,
+        action: int,
+        next_observation: Observation,
+        done: bool,
+        meta_info: Dict[str, Any] = None,
+    ) -> float:
+        if done:
+            generated_text = next_observation.context_text
+            if self._dataset_name == "shp":
+                post = meta_info['post']
+                input_text = f"POST: {post}\n\nRESPONSE A: {generated_text}\n\nRESPONSE B: .\n\nWhich response is better? RESPONSE" 
+
+            elif self._dataset_name == "hh_rlhf":
+                post = " ".join(current_observation.prompt_or_input_text.splitlines())
+                input_text = f"POST: {post}\n\nRESPONSE A: {generated_text}\n\nRESPONSE B: .\n\nWhich response is better? RESPONSE" 
+                #print(f"\n\ninput text: {input_text}\n\n")
+
+            elif self._dataset_name == "alpaca":
+                post = current_observation.prompt_or_input_text
+                input_text = f"POST: {post}\n\nRESPONSE A: {generated_text}\n\nRESPONSE B: .\n\nWhich response is better? RESPONSE" 
+
+            else:
+                raise NotImplementedError
+
+            with torch.no_grad():
+                encoded = self._metric_tokenizer(
+                    generated_text,
+                    return_tensors="pt",
+                    truncation=True,
+                    padding="max_length",
+                    max_length=self._max_length
+                )
+                outputs = self._metric_model.generate(
+                    encoded.input_ids.to(self._device),
+                    return_dict_in_generate=True,
+                    output_scores=True,
+                    max_new_tokens=1
+                )
+                # index 71 corresponds to the token for 'A'
+                score = torch.exp(outputs.scores[0][:, 71]) / torch.exp(outputs.scores[0][:,:]).sum(axis=1)
+                return score.item()
+        return 0
 
 
 class SpiderRewardFunction(BatchedRewardFunction):
